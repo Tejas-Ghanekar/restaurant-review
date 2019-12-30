@@ -26,3 +26,6 @@ def get_restaurants(event,context):
   finally:
     cur.close()
   return result
+
+
+  
