@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    padding: 12px;
+}
+
+table{
+    width:100%;
+}
+
+.navbar{
+   height: 60px; 
+} 
+
+.logout{
+    text-align: right;
+    width:100%;
+}

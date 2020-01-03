@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"reviewappc409c34f": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}

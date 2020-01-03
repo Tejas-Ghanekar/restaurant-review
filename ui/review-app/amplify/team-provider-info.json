@@ -1,0 +1,20 @@
+{
+    "develop": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-review-app-develop-100133-authRole",
+            "UnauthRoleArn": "arn:aws:iam::201751494828:role/amplify-review-app-develop-100133-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::201751494828:role/amplify-review-app-develop-100133-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-review-app-develop-100133-deployment",
+            "UnauthRoleName": "amplify-review-app-develop-100133-unauthRole",
+            "StackName": "amplify-review-app-develop-100133",
+            "StackId": "arn:aws:cloudformation:us-east-1:201751494828:stack/amplify-review-app-develop-100133/ef38ebc0-2e39-11ea-a8c7-0ea47a628cf7",
+            "AmplifyAppId": "d17i2vy1ua2mbc"
+        },
+        "categories": {
+            "auth": {
+                "reviewappc409c34f": {}
+            }
+        }
+    }
+}
