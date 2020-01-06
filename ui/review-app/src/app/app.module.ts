@@ -8,18 +8,23 @@ import { HomeComponent } from './home/home.component';
 import { AuthComponent } from './auth/auth.component'; 
 import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 import { AuthGuardService } from './auth-guard.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbdModalBasic } from './modal-basic'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AuthComponent
+    AuthComponent,
+    NgbdModalBasic
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AmplifyAngularModule
+    AmplifyAngularModule,
+    NgbModule
   ],
   providers: [AmplifyService, AuthGuardService],
   bootstrap: [AppComponent]

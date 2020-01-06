@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Type } from '@angular/core';
 import { AmplifyService } from 'aws-amplify-angular';
 import { Router } from '@angular/router';
 
@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./auth.component.css']
 })
 export class AuthComponent implements OnInit {
+  static NgbdModalBasic: any[] | Type<any>;
 
   constructor(private amplifyService:AmplifyService, private _router: Router) { 
     this.amplifyService = amplifyService;
@@ -16,7 +17,7 @@ export class AuthComponent implements OnInit {
       if(authState.state === "signedIn"){
         this._router.navigateByUrl("/home");
       }
-      return false;
+      return false
     });
   }
 

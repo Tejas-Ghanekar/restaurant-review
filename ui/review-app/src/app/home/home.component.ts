@@ -22,6 +22,7 @@ export class HomeComponent implements OnInit {
     .subscribe(data=>{
       for (const d of (data as any)){
         this.restaurants.push({
+          id: d.id,
           name: d.name,
           address: d.address,
           price: d.price,
