@@ -1,7 +1,9 @@
-<nav class="navbar navbar-dark bg-primary">
+<nav class="navbar navbar-dark">
+  <div class="title">
+    <h4>ReviewApp</h4>
+  </div>
   <div class="logout">
-      <button class="amplify-form-button " (click)="logOut() ">Logout</button>
-
+      <button class="amplify-form-button logout-button" (click)="logOut() ">Logout</button>
   </div>    
 </nav>
 
@@ -16,8 +18,7 @@
                 <h5 class="card-title">{{restaurant.name}}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">{{restaurant.address}}</h6>
                 <p class="card-text">{{restaurant.city+", "+restaurant.state+" - "+restaurant.postal_code}}</p>
-                <!-- <button (click)="open()">Review</button> -->
-                <ngbd-modal-basic></ngbd-modal-basic>
+                <ngbd-modal-basic restId={{restaurant.id}}></ngbd-modal-basic>
               </div>
             </div>
             </td>    

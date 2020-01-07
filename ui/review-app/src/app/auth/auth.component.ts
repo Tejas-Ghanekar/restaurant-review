@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./auth.component.css']
 })
 export class AuthComponent implements OnInit {
+
   static NgbdModalBasic: any[] | Type<any>;
 
   constructor(private amplifyService:AmplifyService, private _router: Router) { 

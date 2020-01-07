@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
@@ -8,6 +8,8 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 })
 export class NgbdModalBasic {
   closeResult: string;
+  @Input() restId: string;
+  reviewText:string;
 
   constructor(private modalService: NgbModal) {}
 
@@ -15,5 +17,10 @@ export class NgbdModalBasic {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     });
+  }
+
+  saveReview(reviewText){
+    console.log("Review : "+reviewText);
+    console.log("ID : "+this.restId);
   }
 }
