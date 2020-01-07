@@ -1,7 +1,16 @@
 @import '~aws-amplify-angular/theme.css';
   
 .amplify-form-body{
-  margin-top:250px;
+  margin-top:200px;
+  
+}
+
+.amplify-form-button{
+    font-size: smaller;
+}
+
+.amplify-select-phone-country{
+    height: 42px;
 }
 .review-input{
     width: 100%;
