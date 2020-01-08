@@ -9,14 +9,15 @@ import { AuthComponent } from './auth/auth.component';
 import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 import { AuthGuardService } from './auth-guard.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgbdModalBasic } from './modal-basic'
+import { NgbdModalBasic } from './modal-basic';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AuthComponent,
-    NgbdModalBasic
+    NgbdModalBasic,
 
   ],
   imports: [
@@ -24,7 +25,8 @@ import { NgbdModalBasic } from './modal-basic'
     AppRoutingModule,
     HttpClientModule,
     AmplifyAngularModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [AmplifyService, AuthGuardService],
   bootstrap: [AppComponent]
