@@ -10,13 +10,15 @@ import { Router } from '@angular/router';
 export class AuthComponent implements OnInit {
 
   static NgbdModalBasic: any[] | Type<any>;
-
+  user:any;
   constructor(private amplifyService:AmplifyService, private _router: Router) { 
     this.amplifyService = amplifyService;
     
     this.amplifyService.authStateChange$.subscribe(authState =>{
       if(authState.state === "signedIn"){
-        this._router.navigateByUrl("/home");
+        this.user = authState.user;
+        this._router.navigate(["/home",this.user.username]);
+
       }
       return false
     });

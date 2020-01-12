@@ -11,6 +11,7 @@ import { AuthGuardService } from './auth-guard.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdModalBasic } from './modal-basic';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { ApiService } from './api.service'
 
 @NgModule({
   declarations: [
@@ -26,9 +27,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     HttpClientModule,
     AmplifyAngularModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
-  providers: [AmplifyService, AuthGuardService],
+  providers: [AmplifyService, AuthGuardService, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
