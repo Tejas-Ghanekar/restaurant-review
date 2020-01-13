@@ -1,18 +1,17 @@
 @import '~aws-amplify-angular/theme.css';
-  
-.amplify-form-body{
-  margin-top:200px;
-  
+.amplify-form-body {
+    margin-top: 200px;
 }
 
-.amplify-form-button{
+.amplify-form-button {
     font-size: smaller;
 }
 
-.amplify-select-phone-country{
+.amplify-select-phone-country {
     height: 42px;
 }
-.review-input{
+
+.review-input {
     width: 100%;
     height: 150px;
     box-sizing: border-box;
@@ -20,54 +19,82 @@
     font-size: 16px;
     resize: none;
     padding: 10px;
-  }
+}
 
-  .review-button{
-      padding:3px;
-  }
+.review-button {
+    padding: 3px;
+}
 
-  .review-close{
-     padding:8px;
-  }
+.read-review-button {
+    padding: 3px;
+    margin-left: 20px;
+}
 
-*{
+.read-review-modal {
+    width: 80%
+}
+
+.review-close {
+    padding: 8px;
+}
+
+* {
     margin: 0;
     padding: 0;
 }
+
+table {
+    width: 100%;
+}
+
 .rate {
     float: left;
     height: 46px;
     padding: 0 10px;
 }
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
 }
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:30px;
-    color:#ccc;
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
 }
-.rate:not(:checked) > label:before {
+
+.rate:not(:checked)>label:before {
     content: '★ ';
 }
-.rate > input:checked ~ label {
-    color: #ffc700;    
+
+.rate>input:checked~label {
+    color: #ffc700;
 }
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
 }
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
     color: #c59b08;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -12,6 +12,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdModalBasic } from './modal-basic';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { ApiService } from './api.service'
+import { ReadReviewModal } from './read-review-modal'
+
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { ApiService } from './api.service'
     HomeComponent,
     AuthComponent,
     NgbdModalBasic,
+    ReadReviewModal
 
   ],
   imports: [

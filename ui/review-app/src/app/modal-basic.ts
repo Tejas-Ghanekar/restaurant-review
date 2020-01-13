@@ -11,7 +11,6 @@ import { dateType } from 'aws-sdk/clients/sts';
   templateUrl: './modal-basic.html'
 })
 export class NgbdModalBasic {
-  //@Output() closeModalEvent = new EventEmitter<boolean>();
   closeResult: string;
   @Input() restId: string;
 

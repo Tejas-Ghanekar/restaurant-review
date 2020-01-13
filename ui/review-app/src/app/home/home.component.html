@@ -1,31 +1,31 @@
 <nav class="navbar navbar-dark">
-  <div class="title">
-    <h4>ReviewApp</h4>
-  </div>
-  <div class="logout">
-      <button class="amplify-form-button logout-button" (click)="logOut() ">Logout</button>
-  </div>    
+    <div class="title">
+        <h4>ReviewApp</h4>
+    </div>
+    <div class="logout">
+        <button class="amplify-form-button logout-button" (click)="logOut() ">Logout</button>
+    </div>
 </nav>
 
 <h1>Restaurant List</h1>
 <div>
-        <table>
-            <tbody>
+    <table>
+        <tbody>
             <tr *ngFor="let restaurant of restaurants">
-            <td>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">{{restaurant.name}}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{restaurant.address}}</h6>
-                <p class="card-text">{{restaurant.city+", "+restaurant.state+" - "+restaurant.postal_code}}</p>
-                <ngbd-modal-basic restId={{restaurant.id}}></ngbd-modal-basic>
-              </div>
-            </div>
-            </td>    
+                <td>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{restaurant.name}}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{restaurant.address}}</h6>
+                            <p class="card-text">{{restaurant.city+", "+restaurant.state+" - "+restaurant.postal_code}}</p>
+                            <div>
+                                <ngbd-modal-basic class="ngbd-modal-basic" restId={{restaurant.id}}></ngbd-modal-basic>
+                                <read-review-modal class="read-review-modal" restId={{restaurant.id}}></read-review-modal>
+                            </div>
+                        </div>
+                    </div>
+                </td>
             </tr>
         </tbody>
-        </table>    
+    </table>
 </div>
-
-
-
