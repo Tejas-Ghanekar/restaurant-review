@@ -16,12 +16,18 @@ export class ReadReviewModal {
   //@Output() closeModalEvent = new EventEmitter<boolean>();
   resReviews: any = [];
   closeResult: string;
+  IsmodelShow : boolean;
   
   @Input() restId: string;
 
 
   constructor(private modalService: NgbModal, private route:ActivatedRoute,private api:ApiService) {
   }
+
+close(){
+this.IsmodelShow = true;
+}
+
 
   ngOnInit() {
     //this.getReviews();
