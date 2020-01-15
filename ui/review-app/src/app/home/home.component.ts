@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
 
 
   restaurants: any = [];
+  searchText;
   constructor(private api: ApiService, private amplifyService: AmplifyService, private _router: Router) { }
 
   ngOnInit() {

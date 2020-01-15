@@ -13,6 +13,8 @@ import { NgbdModalBasic } from './modal-basic';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { ApiService } from './api.service'
 import { ReadReviewModal } from './read-review-modal'
+import { FormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { ReadReviewModal } from './read-review-modal'
     AmplifyAngularModule,
     NgbModule,
     BrowserAnimationsModule,
+    FormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [AmplifyService, AuthGuardService, ApiService],
   bootstrap: [AppComponent]

@@ -1,28 +1,40 @@
-h1{
+h1 {
     text-align: center;
     padding: 12px;
 }
 
-table{
-    width:100%;
+table {
+    width: 100%;
 }
 
-.navbar{
-   height: 60px; 
-   background-color: #ff9900;
-} 
+.navbar {
+    height: 60px;
+    background-color: #ff9900;
+}
 
-.logout{
+.logout {
     text-align: right;
-    width:50%;
+    width: 50%;
 }
-.logout-button{
+
+.logout-button {
     margin-bottom: 5px;
-    width:75px;
+    width: 75px;
     padding: 4px;
 }
 
-.title{
+.title {
     color: white;
-    width:50%
+    width: 50%
+}
+
+.search {
+    max-width: 1255px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 13px;
+}
+
+.form-control::placeholder {
+    font-family: FontAwesome;
 }
