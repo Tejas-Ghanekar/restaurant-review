@@ -4,9 +4,9 @@ import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { dateType } from 'aws-sdk/clients/iam';
 
-const url = 'https://lo3kcg87r8.execute-api.us-east-1.amazonaws.com/dev';
-const postUrl = "https://lo3kcg87r8.execute-api.us-east-1.amazonaws.com/test"
-const getReviewsUrl = "https://rwrpanrf9l.execute-api.us-east-1.amazonaws.com/test/"
+const url = 'https://g3iulq08o7.execute-api.us-east-1.amazonaws.com/dev/restaurants';
+const postUrl = "https://g3iulq08o7.execute-api.us-east-1.amazonaws.com/dev/restaurants/review"
+const getReviewsUrl = "https://g3iulq08o7.execute-api.us-east-1.amazonaws.com/dev/restaurants/review/"
 
 const httpOptions = {
   headers: new HttpHeaders({
